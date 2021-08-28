@@ -9,8 +9,10 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'trivia',
         'USER': 'root',
-        'PASSWORD': 'clave1234',
+        'PASSWORD': 'Suipacha1325',
         'HOST': 'localhost',
         'PORT': '3306',
     }
 }
+
+'''heroku'''
