@@ -21,7 +21,7 @@ class Participante(Usuario):
     Id_puntaje_general= models.ForeignKey('Puntaje_General', on_delete=models.CASCADE)
 
 class Estadísticas(models.Model):
-    Id_estadisticas= primary_key=True
+    Id_Estadisticas= primary_key=True
     Cantidad_Accesos= models.PositiveIntegerField(help_text="Hasta ahora se han logeado en Chaqueña Mente: f{PositiveIntegerField} personas")
     Cantidad_Participantes =models.PositiveIntegerField(help_text="Hasta ahora han jugado Chaqueña Mente: f{PositiveIntegerField} personas")
 

@@ -3,9 +3,26 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    texto={'mensaje_texto':'Este es mi primer mensaje :)'}
-    return render (request, 'index.html',texto)
+    return render (request, 'index.html')
 
 
-def contac(request):
-    return HttpResponse('hola estoy en la pagina de contacto')
+def iniciar(request):
+    return render (request, 'quiz/iniciar.html')
+
+def play(request):
+    return render (request, 'quiz/juego.html')
+
+
+def puntaje(request):
+    return render (request, 'quiz/puntaje.html')
+
+
+
+
+
+
+
+
+
+
+
