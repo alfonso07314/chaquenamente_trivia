@@ -1,48 +1,25 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenidos a ChaqueñaMente</title>
+{% extends 'base2.html' %}
 
-    <!-- Favicon -->
-
-    <!-- Fonts -->
-
-    <!-- Fonts Awesome  -->
-
-    <!-- Boostrap -->
-
-    <!-- Libreries Stylesheat -->
-
-
-    <!-- Customize CSS Stylesheat -->
-    <link href="{% static 'css/style.css' %}" rel="stylesheet" 
-
-</head>
-<body>
-    <div class="marco">
+{% block contenido %}
+    <div class="marco" >
         <h1 class="titulo">ChaqueñaMente</h1>
         <!-- <a class="boton"  href="#">Jugar</a>  -->
         
-        <a  href="#" class="botonJugar"> 
-                Jugar
+        <a  href="quiz/login"   class="botonJugar" > 
+                Iniciar Sesion
                 <!--<h2 class="boton">Jugar</h2>-->
         
         
         </a>
+        <a  href="quiz/registro" class="botonJugar" > 
+            Registrarse
+            <!--<h2 class="boton">Jugar</h2>-->
+    
+    
+        </a>
         
-        <div class="parrafo">
-            <p class="frase">#frase celebre kjdfkkfdjakafkjasjafkajfjafjafjafljaffadjadjfjdfkdjflafkafjlajadajdfldjafdajdalfjdaldafd</p> 
-        </div>
+        
 
     </div>
-
-
-<!-- Java Scrip Libreries -->
-<!--  <script src="{% static 'js/main.js'%}"></script>  -->
-    
-</body>
-</html>
+   
+{% endblock %}

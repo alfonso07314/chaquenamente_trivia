@@ -1,0 +1,16 @@
+{% extends 'base2.html' %}
+
+{% block contenido %}
+
+    <div class="marco">   
+        <form class="form" method="post">
+            {% csrf_token %}
+            <p class="pform" style="width: 100%;text-align:center; " ><label for="id_username" style="font-family:Inter; padding: 30px;" >Username:</label> <input class="formula" style="float: none;" type="text" name="username" required id="id_username"></p>
+            <p class="pform" style="width: 100%; text-align:center; "><label for="id_password" style="font-family:Inter; padding: 30px;" >Password:</label> <input class="formula" style="float: none;" type="password" name="password" required id="id_password"></p> 
+            <button class="botonenviar" type="submit">Guardar</button>
+                
+
+        </form>
+    </div>
+   
+{% endblock %}

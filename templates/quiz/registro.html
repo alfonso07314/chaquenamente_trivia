@@ -1,0 +1,20 @@
+{% extends 'base2.html' %}
+
+{% block contenido %}
+
+    <div class="marco">
+        
+            <form class="form" style="transform:translate(-68%,-50%); width:62%" method="post">
+                {% csrf_token %}
+                
+                <p class="pform" ><label for="id_username" style="font-family:Inter; padding: 30px;">Username:</label> <input class="formula" type="text" name="username" autofocus required id="id_username" ></p>
+                <p class="pform" ><label for="id_email" style="font-family:Inter; padding: 30px;">Email:</label> <input class="formula" type="email" name="email" required id="id_email"  ></p>
+                <p class="pform" ><label for="id_password1" style="font-family:Inter; padding: 30px;">Contraseña:</label> <input class="formula" type="password" name="password1" autocomplete="new-password" required id="id_password1"  > </p>
+                <p class="pform" ><label for="id_password2" style="font-family:Inter; padding: 30px;">Confirmar contraseña:</label> <input class="formula"  type="password" name="password2" autocomplete="new-password" required id="id_password2"  > </p> 
+                <button class="botonenviar" style="transform:translate(55%,0%);" type="submit" >Guardar</button>
+
+            </form>
+            
+    </div>    
+
+{% endblock %}

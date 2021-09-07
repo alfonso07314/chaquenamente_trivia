@@ -8,9 +8,11 @@ body{
 div.marco{
     flex-flow: row wrap;
     text-align: center;
-    margin: 0%;
+    margin: auto;
+    top: 0%;
     width: 100%;
     height: 100vh;
+    border: 3px solid orange; 
      
 }
 
@@ -37,14 +39,18 @@ div.boton {
     margin: 2% 30% ;
 }
 
-a.botonJugar  {
+.botonJugar  {
     background-color:royalblue;
     padding: 50px 100px;
-    margin: 20% 40%;
+    margin: 5% 30% !important;
+    display: block !important;
+    border-radius: 10px;
     text-align: center;
     color: aqua;
-    text-decoration: none;
+    text-decoration:double;
     font-size: 50px;
+    
+    
 }
 
 div.parrafo{
@@ -71,7 +77,9 @@ h2.boton{
 h1.tituloPequeño{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 45;
-    margin: 5% 30% 10% 30%;
+    margin: auto;
+    margin-bottom: 10%;
+    margin-top: 10%;
     text-align: center;
 }
 /* -------------- QUIZ --------------------------------------------------- */
@@ -104,8 +112,9 @@ div.prueba{
     align-items:center;
     /*background-color: aquamarine; */
     border: 2px;
+    width: 50%;
     height: 70%;
-    margin: 2% 30%;
+    margin: auto;
 }
 
 a.boton  {
@@ -122,11 +131,16 @@ div.inferior{
 
     height: 30%;
     flex-flow: column wrap;
+    border: 3px solid cornflowerblue; 
 
 }
 
 
-a.botonInferior{
+a.botonInferiorD{
+    
+    position: absolute;
+    top: 80%;
+    left: 10%;
     background-color: blueviolet;
     padding: 20px 50px;
     margin-top: 3%;
@@ -135,7 +149,25 @@ a.botonInferior{
     color: aqua;
     text-decoration: none;
     display: inline;
-    font-size: 15px;
+    font-size: 25px;
+
+
+}
+
+a.botonInferiorI{
+    
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    background-color: blueviolet;
+    padding: 20px 50px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+    color: aqua;
+    text-decoration: none;
+    display: inline;
+    font-size: 25px;
 
 
 }

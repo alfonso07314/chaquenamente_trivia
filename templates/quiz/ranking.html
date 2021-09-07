@@ -1,0 +1,57 @@
+{% extends 'base2.html' %}
+
+{% block contenido %}
+
+<div class="marco" >
+    
+    <h1 style="margin-bottom: 5%; margin-top: 3%;">
+        <span class="tituloPequeño" >
+            Los {{contar_partida}} mejores jugadores
+        </span>    
+
+    </h1>
+    <div class="compartir">
+        
+        <h2 class="compartir">
+            Compartir en
+        </h2>
+        <li class="compartir" >
+            <a href="http://www.facebook.com/sharer.php?u=http://127.0.0.1:8000/" class="sm facebook">
+                <span class="icon" style="font-size: 27px;">
+                    <i class="fab fa-facebook-f"></i>
+                </span>
+                <span class="text" style="font-size: 27px;">Facebook</span>
+            </a>
+        </li>
+        <li class="compartir" >
+            <a href="#" class="sm twitter">
+                <span class="icon" style="font-size: 27px;">
+                    <i class="fab fa-twitter"></i>
+                </span>
+                <span class="text" style="font-size: 27px;">Twitter</span>
+            </a>
+        </li>
+
+    </div>
+    <table class="tablaranking">
+        <thead>
+            <tr > 
+                <th class="encabezadorankingiz">Posicion</th>
+                <th class="encabezadoranking">Participante</th>
+                <th class="encabezadorankingdr">Puntaje</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for quiz_partida in partida_quiz%}
+                <tr class="datosranking">
+                    <td class="datosranking">{{forloop.counter}}</td>
+                    <td class="datosranking">{{quiz_partida.participante.username}}</td>
+                    <td class="datosranking">{{quiz_partida.puntaje_total}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+{% endblock %}
